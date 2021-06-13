@@ -1,0 +1,35 @@
+# PANDAS
+
+import pandas as pd
+
+nyoba = pd.DataFrame (data = {"Nama" : ["Ahmad","Joko", "Adi"],
+        "Umur" : [12,13,15],
+        "Kelas" : [6, 7, 8]})
+# df = pd.DataFrame(Data)
+nyoba
+
+nyoba.columns
+
+# Tugas
+# Buat datafram 3 orang yang terspecify, location, city, age, job
+# dan merital status
+# data type location, city, job jadi object
+# data type age = float
+# marital status =  boolean
+
+tugas = pd.DataFrame (data = {"Nama" : ["Ahmad","Joko", "Adi"],
+        "Location" : ["Paris", "Bali", "Korea"],
+        "Age" : [23,22,33],
+        "Job" : ["Farmer","Bartender","Senior Data Science"],
+        "Merital Status" :[False,False,True]})
+# df = pd.DataFrame(Data)
+tugas
+
+#Coba cek
+tugas.dtypes
+
+# Pandas Series = maps (fungsi replace nya namanya maps)
+# Padas dataframe = replace
+
+# Rubah data type
+tugas.replace({True :"Merrried", False: "Single"})
