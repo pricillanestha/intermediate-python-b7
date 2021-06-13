@@ -1,0 +1,95 @@
+# Pertemuan Pertama itu :
+# Import Numpy
+import numpy as np
+
+# Rubah dari List ke Array
+
+# Bikin Array
+a = [1, 2, 3]
+a
+
+# One Dimensional array
+b = np.array(a)
+
+# Two Dimensional array
+c = np.array ([[1, 2, 3],
+              [4, 5, 6 ]])
+              
+# Cek Dimensi
+print("Dimensi pertama :",  b.ndim)
+
+print ("Dimensi Kedua:", c.ndim)
+
+# Cek Shape
+print("Shap pertama :",  b.shape)
+
+print ("Dimensi Kedua:", c.shape)
+
+
+# Cek dtype
+print("Dimensi pertama :",  b.dtype)
+
+print ("Dimensi Kedua:", c.dtype)
+
+# Cek size
+print("Dimensi pertama :",  b.size)
+
+print ("Dimensi Kedua:", c.size)
+
+# Cek dtype
+print("Dimensi pertama :",  b.nbytes)
+
+print ("Dimensi Kedua:", c.nbytes)
+
+## NP Ones and Zeros
+
+# NP Ones
+ones_matrix = np.ones((3, 3, 3), dtype =("int32"))
+
+#Print np.ones
+print (ones_matrix)
+ones_matrix.ndim
+
+# Semkain banyak maka semkain banyak data yang bisa di store dari setiap dimensi
+# Jadi datanya jadi lebih rapih
+
+# NP Zeros
+zeros_matrix = np.zeros((3, 3, 3), dtype =("int32"))
+
+#Print np.ones
+print(zeros_matrix)
+zeros_matrix.ndim
+
+## np full and np.rand
+## Bikin matix dan ga perlu data type
+full_matrix = np.full((5, 5), 13292)
+
+#Print np.full
+print (full_matrix)
+full_matrix.ndim # Search for dimension
+
+# Np random (float)
+random_matrix = np.random.rand(3, 3)
+
+#Print np.full
+print (random_matrix)
+random_matrix.ndim # search for dimension
+
+#np.random (integer)
+np.random.randint(-2, 7, size=(3, 3, 3))
+
+np.identity(5)
+
+# Tugas 1
+import numpy as np
+x = np.ones((3,3))
+# print("Checkerboard pattern:")
+x = np.zeros((8,8),dtype=int)
+x[1::2,::2] = 1
+x[::2,1::2] = 1
+print(x)
+
+# :(:) = titik ke 2 nya itu untuk nge state diloncat brp kali
+
+
+
