@@ -1,0 +1,107 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+df = pd.read_csv("fifa.csv")
+df.info()
+
+df = pd.read_csv("C:\\Users\\acer\\Documents\\KELAS AI MENTORSHIP\\intermediate-phyton-b7-b\\fifa.csv")
+df.head(287)
+
+# X
+date =df["Date"]
+# Y
+dev_arg = df["ARG"]
+dev_bra= df["BRA"]
+dev_esp = df["ESP"]
+dev_fra = df["FRA"]
+dev_ger = df["GER"]
+dev_ger = df["ITA"]
+
+# Liat data yang ARG
+fix, ax = plt.subplots()
+ax.plot(date, dev_arg, label='ARG')
+
+ax.plot(date, dev_arg, color='green',
+         linestyle='-', label='ARG')
+
+ax.set_title('ARG')
+ax.set_xlabel('Date')
+ax.set_ylabel('Score')
+
+plt.tight_layout()
+
+plt.show()
+
+# Liat data yang BRA
+fix, ax = plt.subplots()
+ax.plot(date, dev_bra, label='BRA')
+
+ax.plot(date, dev_bra, color='green',
+         linestyle='-', label='BRA')
+
+ax.set_title('BRA')
+ax.set_xlabel('Date')
+ax.set_ylabel('Score')
+
+plt.tight_layout()
+
+plt.show()
+
+# Liat data yang ESP
+fix, ax = plt.subplots()
+ax.plot(date, dev_esp, label='ESP')
+
+ax.plot(date, dev_esp, color='green',
+         linestyle='-', label='ESP')
+
+ax.set_title('ESP')
+ax.set_xlabel('Date')
+ax.set_ylabel('Score')
+
+plt.tight_layout()
+
+plt.show()
+
+# Liat data yang FRA
+fix, ax = plt.subplots()
+ax.plot(date, dev_esp, label='FRA')
+
+ax.plot(date, dev_esp, color='green',
+         linestyle='-', label='FRA')
+
+ax.set_title('ESP')
+ax.set_xlabel('Date')
+ax.set_ylabel('Score')
+
+plt.tight_layout()
+
+plt.show()
+
+fix, ax = plt.subplots()
+ax.plot(date, dev_ger, label='GER')
+
+ax.plot(date, dev_ger, color='green',
+         linestyle='-', label='GER')
+
+ax.set_title('GER')
+ax.set_xlabel('Date')
+ax.set_ylabel('Score')
+
+plt.tight_layout()
+
+plt.show()
+
+fix, ax = plt.subplots()
+ax.plot(date, dev_ita, label='ITA')
+
+ax.plot(date, dev_ita, color='green',
+         linestyle='-', label='ITA')
+
+ax.set_title('ITA')
+ax.set_xlabel('Date')
+ax.set_ylabel('Score')
+
+plt.tight_layout()
+
+plt.show()
